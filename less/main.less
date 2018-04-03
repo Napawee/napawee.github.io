@@ -1,0 +1,118 @@
+/*
+To compile:
+0.  Visit https://github.com/jonycheung/deadsimple-less-watch-compiler
+1.  Open Terminal
+2.  Type this code at the project folder:
+    less-watch-compiler less css
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700');
+@import url('https://fonts.googleapis.com/css?family=Kanit:300,400,700');
+@import "_variables.less";
+@import "_mixins.less";
+
+
+
+
+
+/*---General Setting---*/
+body{
+  padding-top: 0px;
+}
+h1{
+  color:@color-theme-primary;
+  font-family:@font-primary;
+  margin-top: 40px;
+  text-align: left;
+}
+
+h2{
+  color:@color-theme-primary;
+  font-family:@font-primary;
+  margin-top: 40px;
+}
+
+
+
+h5{
+  font-family:@font-primaryth;
+}
+
+section {
+    padding: 20px 0;
+}
+
+head.intro-text{
+    text-align: left;
+}
+
+header.masthead {
+    background-image: url(../img/header1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+head.intro-heading{
+      padding-top: 0px;
+      font-size: 54px;
+      font-weight: 700;
+      line-height: 60px;
+      align-items:flex-start;
+      font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+
+
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+    background: rgba(255,26,106,.5);
+}
+
+.text-primary {
+    color:@color-theme-secondary!important;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link{
+color: @color-theme-primary;
+
+}
+
+#mainNav .navbar-brand {
+    color:white;
+    font-family:@font-primary cursive;
+
+}
+
+/*---Button---*/
+.btn-primary {
+  &:extend(.btn all);
+  .button-variant(#ffffff,@color-theme-primary, #000000);
+}
+
+/*---Responsive (Bootstrap Standard)---*/
+/* Only Large devices (LG) */
+@media only screen and (min-width: 1201px) {
+
+}
+/* Only Medium devices (MD) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+/* Only Small devices (SM) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+/* Only Extra Small devices (XS) */
+@media only screen and (max-width: 768px) {}
