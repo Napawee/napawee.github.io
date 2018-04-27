@@ -180,6 +180,12 @@ head.intro-heading {
   background-color: #e290a0!important;
   border-color: #e290a0!important;
 }
+.work-page #mainNav {
+  background-color: #e4b6c2 !important;
+}
+.work-page .modal-content {
+  border: 0px;
+}
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
 /* Only Medium devices (MD) */
